@@ -1,0 +1,18 @@
+
+ 
+<div class="container">
+    <label for="colorbox">Enter color:</label>
+    <input type="text" [style.backgroundColor]="color" [(ngModel)]="color" id="colorbox" (change)="onInputChange()"><hr />
+    <!-- <input type="textarea" [(ngModel)]="newEmp">
+    <button (click)="addEmployee()" >Add Employee</button>
+    <p>{{employees}}</p> -->
+
+<table class="table table-dark table-striped">
+    <tbody>
+        <tr *ngFor="let e of employees">
+            <td>{{e}}</td>
+        </tr>
+    </tbody>
+
+</table>
+</div>

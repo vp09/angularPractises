@@ -1,0 +1,9 @@
+
+  <div >
+    <input type="radio" name="designation" value="All" [(ngModel)]="selectedOption" value="All" (change)="sendDataToParent()">All({{All}})
+    <input type="radio" name="designation" value="System engineer" [(ngModel)]="selectedOption" value="System engineer" (change)="sendDataToParent()">System engineer({{sysEng}})
+    <input type="radio" name="designation" value="System Architect" [(ngModel)]="selectedOption" value="System Architect" (change)="sendDataToParent()">system Architect({{sysArch}})
+</div>
+<div>
+  <p>{{selectedOption}}</p>
+</div>
